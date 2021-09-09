@@ -159,8 +159,9 @@ Citizen.CreateThread(function()
  Citizen.CreateThread(function()
     waitingdoc = 1000
     while true do
-        Citizen.Wait(0)
+       
         if Config.UseKey then 
+            waitingdoc = 5
         if UI_MOUSE_FOCUS == true then
 
             --[[
